@@ -63,9 +63,13 @@ public class NhanVien {
         {
             return TienLuong * 0.2;
         } 
-        else if (TienLuong >= 100)
+        else if (TongGioLam >= 100)
         {
             return TienLuong * 0.1;
+        }
+        else if(TongGioLam < 100)
+        {
+            return TienLuong * 0;
         } 
         else return 0;
     }
